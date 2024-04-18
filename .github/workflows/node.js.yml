@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           source: .
-          target: /home/ubuntu/deployements/
+          target: /home/ubuntu/dockercrud/
           
       - name: Debug directory structure
         run: |
