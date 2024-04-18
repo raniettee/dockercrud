@@ -7,7 +7,7 @@ services:
       - "3700:3700"
     command: npm start  
     environment:
-      MONGO_URI: mongodb://youssef:youssef@db:27017
+      MONGO_URI: mongodb://rania:rania@db:27017
     volumes:
       - "./server/:/app"  
       - "/app/node_modules"
@@ -24,8 +24,8 @@ services:
     image: mongo
     restart: always
     environment:
-      MONGO_INITDB_ROOT_USERNAME: youssef
-      MONGO_INITDB_ROOT_PASSWORD: youssef
+      MONGO_INITDB_ROOT_USERNAME: rania
+      MONGO_INITDB_ROOT_PASSWORD: rania
     volumes:
       - db-data:/data/db
 volumes:
