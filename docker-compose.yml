@@ -18,6 +18,7 @@ services:
       - "3000:3000"
     command: npm start  
     volumes:
+      - web-root:/app/build
       - "./client/:/app"  
       - "/app/node_modules"
   db: 
