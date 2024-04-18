@@ -59,11 +59,14 @@ services:
 volumes:
   db-data: {} 
   certbot-etc:
+    driver: local
   certbot-var:
-  web-root: 
+    driver: local
+  web-root:
+    driver: local
 
 networks:
-  crud_network:
+  test_network:
     driver: bridge      
       
     
