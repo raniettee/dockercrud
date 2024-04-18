@@ -53,7 +53,7 @@ services:
       - web-root:/var/www/html
     depends_on:
       - webserver
-    command: certonly --webroot --webroot-path=/var/www/html --email trabelsirania60@gmail.com --agree-tos --no-eff-email --staging -d testt.ddns.net
+    command: certonly --webroot --webroot-path=/var/www/html --email trabelsirania60@gmail.com --agree-tos --no-eff-email --staging -d testttrania.ddns.net
     networks:
       - test_network
 volumes:
