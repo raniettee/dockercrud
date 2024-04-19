@@ -73,7 +73,7 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/rania/Desktop/crud-users/dhparam/
+      device: /crud-users/dhparam/
       o: bind
 
 networks:
