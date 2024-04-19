@@ -69,8 +69,6 @@ volumes:
   certbot-var:
   web-root:
     driver: local
-  dhparam:
-    driver: local
     driver_opts:
       type: none
       device: /crud-users/dhparam/
