@@ -16,8 +16,6 @@ services:
   web:
     build: ./client/
     container_name: web
-    ports:
-      - "3000:3000"
     command: npm start  
     volumes:
       - web-root:/app/build
