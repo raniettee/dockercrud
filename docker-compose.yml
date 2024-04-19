@@ -61,7 +61,8 @@ services:
       - nginx
     command: certonly --webroot --webroot-path=/var/www/html --email trabelsirania60@gmail.com --agree-tos --no-eff-email --staging -d testt.ddns.net
     networks:
-      - test_network   
+      - test_network  
+   
 
 volumes:
   db-data: {} 
@@ -69,13 +70,10 @@ volumes:
   certbot-var:
   web-root:
     driver: local
+  
 
 networks:
   test_network:
     driver: bridge
-dhparam:
-    driver: local
-    driver_opts:
-      type: none
-      device: /home/rania/Desktop/crud-users/dhparam/
-      o: bind
+
+
