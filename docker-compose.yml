@@ -68,10 +68,11 @@ volumes:
   certbot-etc:
   certbot-var:
   web-root:
+  dhparam:
     driver: local
     driver_opts:
       type: none
-      device: /crud-users/dhparam/
+      device: /home/ubuntu/dockercrud/dhparam/
       o: bind
 
 networks:
