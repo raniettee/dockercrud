@@ -59,7 +59,7 @@ services:
       - nginx
     command: certonly --webroot --webroot-path=/var/www/html --email trabelsirania60@gmail.com --agree-tos --no-eff-email --staging -d testt.ddns.net
     networks:
-      - test_default
+      - test_network
 
 volumes:
   db-data: {} 
